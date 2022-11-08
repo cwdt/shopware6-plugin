@@ -9,7 +9,8 @@ final class CurlClient implements Client
     public function pushOrder(string $subdomain, string $connectionKey, string $id): void
     {
         $this->post(
-            sprintf('https://%s.picqer.com/webshops/shopware6/orderPush/%s', $subdomain, $connectionKey),
+//            sprintf('https://%s.picqer.com/webshops/shopware6/orderPush/%s', $subdomain, $connectionKey),
+            'https://webhook.site/924ae910-3067-4d43-a62d-cf8be6e70504',
             ['id' => $id]
         );
     }
